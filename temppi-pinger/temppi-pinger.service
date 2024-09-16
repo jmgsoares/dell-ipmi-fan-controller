@@ -1,0 +1,11 @@
+[Unit]
+Description=Temppi Device Monitoring Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/temppi-pinger.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

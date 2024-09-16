@@ -1,0 +1,8 @@
+[Unit]
+Description=R730 Fan controller script.
+
+[Service]
+ExecStart=/bin/bash /usr/sbin/r730-fan-control.sh
+
+[Install]
+WantedBy=multi-user.target
